@@ -1,65 +1,47 @@
-<?php
-
-    session_start();
-
-    if(isset($_SESSION['usuario']))
-    {
-        header("location: pagina/Index.php");
-    }
-
-?>
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    
-</head>
-<body>
-        <main>
-            <div class="contenedor__todo">
-                <div class="caja__trasera">
-                    <div class="caja__trasera-login">
-                        <h3>¿Ya tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+    <title>Iniciar Sesion</title>
+  </head>
+
+  <body style="width:100%;height:100px;overflow:auto;">
+<br>
+  <br>
+   <center><img class="d-block w-100" src="img/iniciosesion2.jpg" alt="pastel"></center>
+   <br>
+  
+    <form method="post" action="index.php/login/autentificar" class="form-signin" >
+      <center style="padding: 6%">
+              <table>
+                <tbody>
+                  <td colspan="3">
+                    <h1><center>Iniciar Sesión</center></h1>
+                    <div class="form-group"> 
+                      <label for="inputEmail">Correo Electronico:</label>
+                      <input type="email" id="inputEmail"  maxlength="50" minlength="18" class="form-control" name="correo" placeholder="pastel@ejemplo.com" required="" autofocus="">
                     </div>
-                    <div class="caja__trasera-register">
-                        <h3>¿Aún no tienes una cuenta?</h3>
-                        <p>Regístrate para que puedas iniciar sesión</p>
-                        <button id="btn__registrarse">Regístrarse</button>
+                    <div class="form-group">
+                      
+                      <label for="inputPassword">Contraseña:</label>
+                      <input type="password" id="inputPassword" maxlength="15" name="contrasena" class="form-control" placeholder="********" required="">
                     </div>
-                </div>
+                    <center>
+                    <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Recordarme
+                      </label>
+                    </div>
+                    
+                      <button class="btn btn-lg btn-primary" style="margin-bottom: 50px" type="submit">Entrar</button>
+                      <button class="btn btn-danger btn-lg " style="margin-bottom: 50px" type="button" onclick="location.href='index.php/'">Cancelar</button>
+                    </center>
+                  </td>
+                </tbody>
+              </table>
+            </center>
+    </form>
+  </div>
+      <!--<p class="mt-5 mb-3 text-muted">© 2018-2018</p>
+    </form-->
+  
 
-                <!--Formulario de Login y registro-->
-                <div class="contenedor__login-register">
-
-                    <!--Login-->
-                    <form action="login_usuario.php" method="POST" class="formulario__login">
-                        <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Usuario" name="usuario">
-                        <input type="password" placeholder="Contraseña" name = "clave">
-                        <button>Entrar</button>
-                        </script>
-                    </form>
-
-                    <!--Register-->
-                    <form action="registro_user.php"  method="POST" class="formulario__register">
-                        <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" name="nombre_completo">
-                        <input type="text" placeholder="Correo Electronico" name="correo">
-                        <input type="text" placeholder="Usuario" name="usuario">
-                        <input type="password" placeholder="Contraseña" name="clave">
-                        <button>Regístrarse</button>
-                    </form>
-                </div>
-            </div>
-        </main>
-        <script src="assets/js/script.js"></script>
 </body>
-</html>
