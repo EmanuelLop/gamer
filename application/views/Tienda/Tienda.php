@@ -1,18 +1,3 @@
-<?php
-
-	session_start();
-	if(!isset($_SESSION['usuario']))
-	{
-		echo'
-			<script>
-				alert("Por favor inicia sesiòn");
-				window.location = "../login.php";
-			</script>
-		';
-		session_destroy();
-		die();
-	}
-
 ?>
 <!DOCTYPE html>
 <html>
