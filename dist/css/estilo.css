@@ -1,0 +1,387 @@
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  @media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.iconos-nosotros {
+    margin: 0 auto;
+}
+
+.icono {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.imgiconos {
+    height: 13rem;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+    /* Texto en mayusculas*/
+}
+@media (min-width:768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    border-style: solid;
+    border-color: wheat;
+    border-width: 1px;
+    background: wheat;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: o;
+    ;
+}
+.anuncio {
+    margin-bottom: 2rem;
+}
+.boton {
+    border: none;
+    transition: background-color .5s ease;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.boton {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-naranja {
+    background-color: #cc7904;
+    border-radius: 1rem;
+}
+
+.boton-verde {
+    background-color: #71B100;
+    border-radius: 1rem;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    left: -2rem;
+    position: absolute;
+}
+.site-header2.inicio {
+    background: url(../img/pasteleria-contactanos.png);
+    background-size: cover;
+    height: 30vh;
+    min-height: 55rem;
+}
+.site-header.inicio {
+    background: url(../img/principal.png);
+    background-position: center center;
+    background-size: 100%;
+    height: 30vh;
+    min-height: 55rem;
+}
+.imagen {
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}/**seccion inferior**/
+
+@media (min-width: 768px) {
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        flex-basis: 140%;
+    }
+    .seccion-inferior .testimoniales {
+        flex-basis: calc(40%-2rem);
+    }
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.imagen {
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.entrada-blog .texto-entrada {
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: wheat;
+    margin-top: 1rem;
+}
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #FBB8FC;
+}
+
+.navegacion {
+    margin-right: 50px;
+}
+/**Anuncios**/
+
+@media (min-width:768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    border-style: solid;
+    border-color: wheat;
+    border-width: 1px;
+    background: wheat;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: o;
+    ;
+}
+
+.precio {
+    font-weight: 700;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+/**testimoniales**/
+
+.testimoniales {
+    margin-left: 3rem;
+}
+
+.testimonial {
+    background-color: wheat;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    left: -2rem;
+    position: absolute;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+}
+
+
+.header{
+	background:url(img/banner_heva.png) no-repeat center center fixed;
+	background-size:cover;
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+/**Anuncios**/
+
+@media (min-width:500px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    border-style: solid;
+    border-color: wheat;
+    border-width: 1px;
+    background: wheat;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .anuncio {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: o;
+    ;
+}
+
+.precio {
+    font-weight: 700;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/**contacto home**/
+
+.imagen-contacto {
+    background-image: url(img/contacto.png);
+    height: 41rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    /* Detecta el tamaño, cuantos elementos, realiza
+    una operacion de mil pixeles  entre 1 y así sucesivamente*/
+    flex: 0 0 95%;
+    color: white;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+.redes {
+    height: 8rem;
+}
+
+.instagram {
+    height: 6.8rem;
+    margin: none;
+    margin-bottom: .5rem;
+}
